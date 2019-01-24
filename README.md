@@ -18,7 +18,8 @@ Build build android app that run as a gRPC server. Now only gRPC C++ version can
 ```sh
  $ git clone -b $(curl -L https://grpc.io/release) https://github.com/grpc/grpc
  $ cd grpc
- $ git submodule update --init
+ Change the protobuf branch to 3.6.1 in the .gitmodules file
+ $ git submodule update --init --recursive
  ```
  ### Build protobuf
  ```sh
