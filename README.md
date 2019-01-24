@@ -24,8 +24,11 @@ Build build android app that run as a gRPC server. Now only gRPC C++ version can
  ```sh
  $ [sudo] apt-get install autoconf automake libtool curl make g++ unzip
  $ cd grpc/third_party/protobuf
+ $ git submodule update --init
+ 
  $ ./autogen.sh
  $ ./configure
+ 
  $ make
  $ make check
  $ sudo make install
